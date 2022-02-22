@@ -1,0 +1,32 @@
+.footer {
+  height: 197px;
+  background-color: $dark-gray;
+  color: $white;
+  padding: 22px 25px 17px 25px;
+  &__logo {
+    font-size: 18px;
+  }
+  &__menu {
+    &__list {
+      list-style: none;
+      padding-left: 0;
+      margin: 17px 0;
+    }
+    &__item {
+      font-size: 16px;
+      margin-bottom: 8px;
+      a {
+        display: block;
+        color: $white;
+      }
+      .fa-utensils {
+        margin-right: 11px;
+        font-size: 13px;
+      }
+      .fa-hands-helping {
+        margin-right: 7px;
+        font-size: 12px;
+      }
+    }
+  }
+}

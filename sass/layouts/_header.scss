@@ -1,6 +1,4 @@
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 14.25px 0;
+.header {
+  height: 63px;
+  @include center;
 }
