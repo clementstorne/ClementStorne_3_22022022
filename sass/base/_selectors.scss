@@ -5,6 +5,12 @@
 // Bold: 700
 // Black: 900
 
+* {
+  box-sizing: border-box; /* Opera/IE 8+ */
+  -moz-box-sizing: border-box; /* Firefox, autres Gecko */
+  -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
@@ -14,6 +20,7 @@ body {
 h1 {
   font-family: "Shrikhand", cursive;
   font-size: 30px;
+  margin: 0;
 }
 
 h2 {
