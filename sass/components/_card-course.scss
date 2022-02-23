@@ -1,0 +1,26 @@
+.card-course {
+  height: 68px;
+  width: 100%;
+  background: $white;
+  border-radius: 15px;
+  padding: 10px 12px 12px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  &__title {
+    margin: 0 0 8.05px;
+  }
+  &__about {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 300;
+  }
+  &__price {
+    height: 46px;
+    &-tag {
+      font-size: 15px;
+      font-weight: 700;
+    }
+  }
+}
