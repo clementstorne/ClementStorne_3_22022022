@@ -153,12 +153,10 @@ input:focus {
   font-size: 15px;
   font-weight: 300;
 }
-.card-course__price {
-  height: 46px;
-}
 .card-course__price-tag {
   font-size: 15px;
   font-weight: 700;
+  margin: 0;
 }
 
 .header {
