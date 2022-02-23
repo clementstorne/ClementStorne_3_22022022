@@ -1,4 +1,5 @@
 .button {
+  display: block;
   height: 50px;
   padding: 0 20.95px;
   background: $btn-gradient;
@@ -7,4 +8,5 @@
   border-radius: 25px;
   font-size: 16px;
   font-weight: 600;
+  @include center;
 }

@@ -42,8 +42,85 @@ a {
   color: #000;
 }
 
+input:focus {
+  outline: none;
+}
+
+.form {
+  height: 50px;
+  width: 100%;
+}
+.form__field {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  text-align: center;
+  background: #eaeaea;
+  border: none;
+  color: #353535;
+}
+.form__field::placeholder {
+  color: #353535;
+  opacity: 1;
+}
+
+.button {
+  display: block;
+  height: 50px;
+  padding: 0 20.95px;
+  background: linear-gradient(355deg, #9356dc 0%, #ff79da 100%);
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .header {
   height: 63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.concept__form {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.concept__form__icon {
+  height: 100%;
+  flex: 35.47%;
+  background: #eaeaea;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 16;
+  color: #353535;
+  text-align: right;
+  padding-right: 17px;
+}
+.concept__form__field {
+  flex: 64.53%;
+  text-align: left;
+}
+.concept__container {
+  background: #f6f6f6;
+  padding: 39px 30px 57px;
+}
+.concept__container__text {
+  text-align: center;
+}
+.concept__title {
+  margin: 0;
+  padding: 0 15px;
+}
+.concept__text {
+  margin: 12px 0 32.4px;
+}
+.concept__button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,24 +148,13 @@ a {
   display: block;
   color: #fff;
 }
-.footer__menu__item .fa-utensils {
+.footer__menu__item__icon_restaurant {
   margin-right: 11px;
   font-size: 13px;
 }
-.footer__menu__item .fa-hands-helping {
+.footer__menu__item__icon_partenaire {
   margin-right: 7px;
   font-size: 12px;
-}
-
-.button {
-  height: 50px;
-  padding: 0 20.95px;
-  background: linear-gradient(355deg, #9356dc 0%, #ff79da 100%);
-  color: #fff;
-  border: none;
-  border-radius: 25px;
-  font-size: 16px;
-  font-weight: 600;
 }
 
 /*# sourceMappingURL=main.css.map */

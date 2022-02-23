@@ -19,13 +19,15 @@
         display: block;
         color: $white;
       }
-      .fa-utensils {
-        margin-right: 11px;
-        font-size: 13px;
-      }
-      .fa-hands-helping {
-        margin-right: 7px;
-        font-size: 12px;
+      &__icon {
+        &_restaurant {
+          margin-right: 11px;
+          font-size: 13px;
+        }
+        &_partenaire {
+          margin-right: 7px;
+          font-size: 12px;
+        }
       }
     }
   }

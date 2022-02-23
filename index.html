@@ -18,17 +18,29 @@
     </header>
     <main>
       <section class="concept">
-        <form action="#" class="form">
-          <input type="text" placeholder="Paris, Belleville" />
+        <form action="#" class="form concept__form">
+          <div class="concept__form__icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <input
+            id="place"
+            class="form__field concept__form__field"
+            type="text"
+            placeholder="Paris, Belleville"
+          />
         </form>
         <div class="concept__container">
-          <div class="concept__container-text">
+          <div class="concept__container__text">
             <h2 class="concept__title">Réservez le menu qui vous convient</h2>
             <p class="concept__text">
               Découvrez des restaurants d'exception, sélectionnés par nos soins.
             </p>
           </div>
-          <button class="button">Explorer nos restaurants</button>
+          <div class="concept__button">
+            <a href="#restaurant-list" class="button"
+              >Explorer nos restaurants</a
+            >
+          </div>
         </div>
       </section>
       <section class="steps">
@@ -45,7 +57,7 @@
           </div>
         </div>
       </section>
-      <section class="restaurant-list">
+      <section id="restaurant-list" class="restaurant-list">
         <h2 class="restaurants-list__title">Restaurants</h2>
         <div class="restaurants-list__container">
           <a href="#" class="card-restaurant">
@@ -109,12 +121,12 @@
         <ul class="footer__menu__list">
           <li class="footer__menu__item">
             <a href="#">
-              <i class="fas fa-utensils"></i>Proposer un restaurant</a
+              <i class="fas fa-utensils footer__menu__item__icon_restaurant"></i>Proposer un restaurant</a
             >
           </li>
           <li class="footer__menu__item">
             <a href="#">
-              <i class="fas fa-hands-helping"></i>Devenir partenaire</a
+              <i class="fas fa-hands-helping footer__menu__item__icon_partenaire"></i>Devenir partenaire</a
             >
           </li>
           <li class="footer__menu__item"><a href="#">Mentions légales</a></li>

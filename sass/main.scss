@@ -5,13 +5,13 @@
 @import "./base/typography";
 @import "./base/selectors";
 
+@import "./components/form";
+@import "./components/button";
+@import "./components/steps-item";
+@import "./components/card-restaurant";
+
 @import "./layouts/header";
 @import "./layouts/concept";
 @import "./layouts/steps";
 @import "./layouts/restaurants-list";
 @import "./layouts/footer";
-
-@import "./components/form";
-@import "./components/button";
-@import "./components/steps-item";
-@import "./components/card-restaurant";

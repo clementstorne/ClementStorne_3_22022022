@@ -1,0 +1,37 @@
+.concept {
+  &__form {
+    display: flex;
+    flex-flow: row nowrap;
+    &__icon {
+      height: 100%;
+      flex: 35.47%;
+      background: $medium-light-gray;
+      @include flex(flex-end, center);
+      font-size: 16;
+      color: $dark-gray;
+      text-align: right;
+      padding-right: 17px;
+    }
+    &__field {
+      flex: 64.53%;
+      text-align: left;
+    }
+  }
+  &__container {
+    background: $light-gray;
+    padding: 39px 30px 57px;
+    &__text {
+      text-align: center;
+    }
+  }
+  &__title {
+    margin: 0;
+    padding: 0 15px;
+  }
+  &__text {
+    margin: 12px 0 32.4px;
+  }
+  &__button {
+    @include center;
+  }
+}
