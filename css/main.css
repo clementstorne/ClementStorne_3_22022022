@@ -329,6 +329,7 @@ input:focus {
 }
 .restaurant__image img {
   height: 100%;
+  width: 100%;
   object-fit: cover;
   object-position: 50% 50%;
 }
@@ -387,6 +388,9 @@ input:focus {
 }
 .footer__logo {
   font-size: 18px;
+}
+.footer__logo a {
+  color: #fff;
 }
 .footer__menu__list {
   list-style: none;

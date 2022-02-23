@@ -5,6 +5,9 @@
   padding: 22px 25px 17px 25px;
   &__logo {
     font-size: 18px;
+    & a {
+      color: $white;
+    }
   }
   &__menu {
     &__list {
