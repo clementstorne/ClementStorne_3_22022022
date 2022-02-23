@@ -16,7 +16,7 @@
     <header class="header">
       <h1><a href="index.html">ohmyfood</a></h1>
     </header>
-    <main class="restaurant-menu">
+    <main class="restaurant">
       <div class="restaurant__image">
         <img
           src="./images/la-palette-du-gout.jpg"
@@ -24,119 +24,121 @@
         />
       </div>
       <div class="restaurant__name">
-        <h1 class="restaurant-name">La palette du goût</h1>
+        <h1 class="restaurant__name__title">La palette du goût</h1>
         <i class="far fa-heart card-restaurant__like-icon"></i>
       </div>
-      <section class="restaurant__courses">
-        <h5 class="restaurant__courses__title">Entrées</h5>
-        <div class="restaurant__courses__container">
-          <div class="card-course">
-            <div class="card-course__text">
-              <h3 class="card-course__title">Fricassée d'escargot</h3>
-              <p class="card-course__about">Au piment d'Espelette</p>
+      <div class="restaurant__menu">
+        <section class="restaurant__courses">
+          <h5 class="restaurant__courses__title">Entrées</h5>
+          <div class="restaurant__courses__container">
+            <div class="card-course">
+              <div class="card-course__text">
+                <h3 class="card-course__title">Fricassée d'escargot</h3>
+                <p class="card-course__about">Au piment d'Espelette</p>
+              </div>
+              <div class="card-course__price">
+                <p class="card-course__price-tag">25€</p>
+              </div>
             </div>
-            <div class="card-course__price">
-              <p class="card-course__price-tag">25€</p>
+            <div class="card-course">
+              <div class="card-course__text">
+                <h3 class="card-course__title">Foie gras de canard mi-cuit</h3>
+                <p class="card-course__about">Et ses copeaux de truffe noire</p>
+              </div>
+              <div class="card-course__price">
+                <p class="card-course__price-tag">35€</p>
+              </div>
+            </div>
+            <div class="card-course">
+              <div class="card-course__text">
+                <h3 class="card-course__title">Œuf au plat</h3>
+                <p class="card-course__about">
+                  Assaisonné à la truffe sur lit de caviar
+                </p>
+              </div>
+              <div class="card-course__price">
+                <p class="card-course__price-tag">20€</p>
+              </div>
             </div>
           </div>
-          <div class="card-course">
-            <div class="card-course__text">
-              <h3 class="card-course__title">Foie gras de canard mi-cuit</h3>
-              <p class="card-course__about">Et ses copeaux de truffe noire</p>
+        </section>
+        <section class="restaurant__courses">
+          <h5 class="restaurant__courses__title">Plats</h5>
+          <div class="restaurant__courses__container">
+            <div class="card-course">
+              <div class="card-course__text">
+                <h3 class="card-course__title">Filet de boeuf aux herbes</h3>
+                <p class="card-course__about">
+                  Accompagné de sa ribambelle de légumes
+                </p>
+              </div>
+              <div class="card-course__price">
+                <p class="card-course__price-tag">40€</p>
+              </div>
             </div>
-            <div class="card-course__price">
-              <p class="card-course__price-tag">35€</p>
+            <div class="card-course">
+              <div class="card-course__text">
+                <h3 class="card-course__title">Parmentier de queue de boeuf</h3>
+                <p class="card-course__about">
+                  À la truffe noire sur sa purée de panais
+                </p>
+              </div>
+              <div class="card-course__price">
+                <p class="card-course__price-tag">35€</p>
+              </div>
+            </div>
+            <div class="card-course">
+              <div class="card-course__text">
+                <h3 class="card-course__title">Filet de turbot</h3>
+                <p class="card-course__about">Aux agrumes</p>
+              </div>
+              <div class="card-course__price">
+                <p class="card-course__price-tag">44€</p>
+              </div>
             </div>
           </div>
-          <div class="card-course">
-            <div class="card-course__text">
-              <h3 class="card-course__title">Œuf au plat</h3>
-              <p class="card-course__about">
-                Assaisonné à la truffe sur lit de caviar
-              </p>
+        </section>
+        <section class="restaurant__courses">
+          <h5 class="restaurant__courses__title">Desserts</h5>
+          <div class="restaurant__courses__container">
+            <div class="card-course">
+              <div class="card-course__text">
+                <h3 class="card-course__title">Paris-Brest</h3>
+                <p class="card-course__about">Revisité</p>
+              </div>
+              <div class="card-course__price">
+                <p class="card-course__price-tag">18€</p>
+              </div>
             </div>
-            <div class="card-course__price">
-              <p class="card-course__price-tag">20€</p>
+            <div class="card-course">
+              <div class="card-course__text">
+                <h3 class="card-course__title">
+                  Macaron au chocolat d'exception
+                </h3>
+                <p class="card-course__about">
+                  Et glace à la vanille de Madagascar
+                </p>
+              </div>
+              <div class="card-course__price">
+                <p class="card-course__price-tag">22€</p>
+              </div>
+            </div>
+            <div class="card-course">
+              <div class="card-course__text">
+                <h3 class="card-course__title">Mousse au chocolat</h3>
+                <p class="card-course__about">
+                  Au piment d'Espelette et à la truffe noire
+                </p>
+              </div>
+              <div class="card-course__price">
+                <p class="card-course__price-tag">23€</p>
+              </div>
             </div>
           </div>
+        </section>
+        <div class="restaurant__button">
+          <a href="#" class="button">Commander</a>
         </div>
-      </section>
-      <section class="restaurant__courses">
-        <h5 class="restaurant__courses__title">Plats</h5>
-        <div class="restaurant__courses__container">
-          <div class="card-course">
-            <div class="card-course__text">
-              <h3 class="card-course__title">Filet de boeuf aux herbes</h3>
-              <p class="card-course__about">
-                Accompagné de sa ribambelle de légumes
-              </p>
-            </div>
-            <div class="card-course__price">
-              <p class="card-course__price-tag">40€</p>
-            </div>
-          </div>
-          <div class="card-course">
-            <div class="card-course__text">
-              <h3 class="card-course__title">Parmentier de queue de boeuf</h3>
-              <p class="card-course__about">
-                À la truffe noire sur sa purée de panais
-              </p>
-            </div>
-            <div class="card-course__price">
-              <p class="card-course__price-tag">35€</p>
-            </div>
-          </div>
-          <div class="card-course">
-            <div class="card-course__text">
-              <h3 class="card-course__title">Filet de turbot</h3>
-              <p class="card-course__about">Aux agrumes</p>
-            </div>
-            <div class="card-course__price">
-              <p class="card-course__price-tag">44€</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="restaurant__courses">
-        <h5 class="restaurant__courses__title">Desserts</h5>
-        <div class="restaurant__courses__container">
-          <div class="card-course">
-            <div class="card-course__text">
-              <h3 class="card-course__title">Paris-Brest</h3>
-              <p class="card-course__about">Revisité</p>
-            </div>
-            <div class="card-course__price">
-              <p class="card-course__price-tag">18€</p>
-            </div>
-          </div>
-          <div class="card-course">
-            <div class="card-course__text">
-              <h3 class="card-course__title">
-                Macaron au chocolat d'exception
-              </h3>
-              <p class="card-course__about">
-                Et glace à la vanille de Madagascar
-              </p>
-            </div>
-            <div class="card-course__price">
-              <p class="card-course__price-tag">22€</p>
-            </div>
-          </div>
-          <div class="card-course">
-            <div class="card-course__text">
-              <h3 class="card-course__title">Mousse au chocolat</h3>
-              <p class="card-course__about">
-                Au piment d'Espelette et à la truffe noire
-              </p>
-            </div>
-            <div class="card-course__price">
-              <p class="card-course__price-tag">23€</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <div class="restaurant__button">
-        <a href="#" class="button">Commander</a>
       </div>
     </main>
     <footer class="footer">

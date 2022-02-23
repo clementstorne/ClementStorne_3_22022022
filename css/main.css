@@ -320,6 +320,65 @@ input:focus {
   gap: 18px;
 }
 
+.restaurant {
+  background: #f6f6f6;
+}
+.restaurant__image {
+  height: 259px;
+  width: 100%;
+}
+.restaurant__image img {
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+.restaurant__name {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -40px;
+  padding: 31px 39px 0 20px;
+  background: #f6f6f6;
+  border-radius: 40px 40px 0 0;
+}
+.restaurant__name__title {
+  font-size: 28px;
+}
+.restaurant__menu {
+  padding-bottom: 83px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.restaurant__courses {
+  width: 100%;
+  padding: 0 12px 0 14px;
+  margin-top: 40px;
+}
+.restaurant__courses__title {
+  margin: 0;
+  padding: 0 6px;
+}
+.restaurant__courses__title::after {
+  display: block;
+  margin: 5px 0 14px;
+  content: "";
+  width: 40px;
+  height: 3px;
+  background: #99e2d0;
+}
+.restaurant__courses__container {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 14px;
+}
+.restaurant__button {
+  width: 186px;
+  margin-top: 51px;
+}
+
 .footer {
   height: 197px;
   background-color: #353535;
