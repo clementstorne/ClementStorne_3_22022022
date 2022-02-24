@@ -3,6 +3,8 @@
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
+  border-radius: 14px;
+  @include shadow(0.2);
   &__image {
     height: 174px;
     width: 100%;
