@@ -1,0 +1,10 @@
+@include responsive-desktop {
+  .desktop-only {
+      height: 437px;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+  }
+}
