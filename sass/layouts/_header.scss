@@ -2,6 +2,19 @@
   &__logo {
     height: 63px;
     @include center;
+    position: relative;
+    ::before {
+      position: absolute;
+      height: 63px;
+      @include center;
+      left: 0;
+      top: 0;
+      margin-left: 21px;
+      font-family: "Font Awesome 5 Free";
+      content: "\f060";
+      font-size: 20px;
+      font-weight: 900;
+    }
   }
   &__form {
     // display: flex;

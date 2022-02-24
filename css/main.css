@@ -248,6 +248,21 @@ input:focus {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+.header__logo ::before {
+  position: absolute;
+  height: 63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  margin-left: 21px;
+  font-family: "Font Awesome 5 Free";
+  content: "\f060";
+  font-size: 20px;
+  font-weight: 900;
 }
 .header__form {
   background: #eaeaea;
