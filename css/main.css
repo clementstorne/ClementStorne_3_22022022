@@ -8,6 +8,48 @@
     transform: scale(1.2);
   }
 }
+@keyframes animation-course-section {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.animation-course-section {
+  animation: animation-course-section 800ms cubic-bezier(0.42, 0.11, 0.3, 1) both;
+}
+
+@keyframes animation-course {
+  0% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.animation-course {
+  animation: animation-course 1000ms cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.animation-course-1 {
+  animation-delay: 400ms;
+}
+
+.animation-course-2 {
+  animation-delay: 600ms;
+}
+
+.animation-course-3 {
+  animation-delay: 800ms;
+}
+
+.animation-course-4 {
+  animation-delay: 1000ms;
+}
+
 * {
   box-sizing: border-box;
   /* Opera/IE 8+ */
@@ -80,6 +122,7 @@ input:focus {
 
 .button {
   display: block;
+  position: relative;
   padding: 15.8px 20.95px;
   background: linear-gradient(355deg, #9356dc 0%, #ff79da 100%);
   color: #fff;
@@ -92,10 +135,24 @@ input:focus {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
-.button:hover {
+.button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 25px;
   background: linear-gradient(355deg, #ae80e5 0%, #fface8 100%);
+  opacity: 0;
+  z-index: -1;
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.4);
+  transition: all 250ms ease-in-out;
+}
+.button:hover::after {
+  opacity: 1;
 }
 
 .steps__item {

@@ -6,3 +6,43 @@
     transform: scale(1.2);
   }
 }
+
+@keyframes animation-course-section {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animation-course-section {
+  animation: animation-course-section $animation-course-section-duration
+    cubic-bezier(0.42, 0.11, 0.3, 1) both;
+}
+
+@keyframes animation-course {
+  0% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animation-course {
+  animation: animation-course $animation-course-duration
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@for $i from 1 through 4 {
+  .animation-course-#{$i} {
+    animation-delay: $animation-course-section-duration *
+      0.25 +
+      $i *
+      $animation-course-duration *
+      0.2;
+  }
+}
