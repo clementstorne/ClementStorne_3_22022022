@@ -1,14 +1,18 @@
 .restaurants-list {
-    height: 1226px;
-    width: 100%;
-    padding: 54px 20px 64px;
-    background: $light-gray;
-    &__title {
-        margin: 0 0 22px 0;
+  width: 100%;
+  padding: 54px 20px 64.4px;
+  background: $light-gray;
+  &__title {
+    margin: 0 0 22px 0;
+  }
+  &__container {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 18px;
+    @include responsive-tablet {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
     }
-    &__container {
-        display: flex;
-        flex-flow: column nowrap;
-        gap: 18px;
-    }
+  }
 }

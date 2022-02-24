@@ -1,20 +1,33 @@
 .concept {
   &__form {
-    display: flex;
-    flex-flow: row nowrap;
+    // display: flex;
+    // flex-flow: row nowrap;
+    background: $medium-light-gray;
+    @include center;
+    position: relative;
     &__icon {
       height: 100%;
       flex: 35.47%;
       background: $medium-light-gray;
       @include flex(flex-end, center);
-      font-size: 16;
       color: $dark-gray;
       text-align: right;
       padding-right: 17px;
     }
     &__field {
-      flex: 64.53%;
-      text-align: left;
+      // flex: 64.53%;
+      // text-align: left;
+      width: 50%;
+    }
+    &::before {
+      position: absolute;
+      height: 50px;
+      @include center;
+      left: 25%;
+      top: 0;
+      font-family: "Font Awesome 5 Free";
+      content: "\f3c5";
+      font-weight: 900;
     }
   }
   &__container {

@@ -72,17 +72,101 @@ input:focus {
 
 .button {
   display: block;
-  height: 50px;
-  padding: 0 20.95px;
+  padding: 15.8px 20.95px;
   background: linear-gradient(355deg, #9356dc 0%, #ff79da 100%);
   color: #fff;
   border: none;
   border-radius: 25px;
   font-size: 16px;
   font-weight: 600;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.steps__item {
+  position: relative;
+  width: 100%;
+  background: #f6f6f6;
+  border-radius: 20px;
+  box-shadow: -1px 2px 5px 2px rgba(0, 0, 0, 0.05);
+  padding: 26px 0 26px 35px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.steps__item:hover {
+  background: #ece6f3;
+}
+.steps__item:hover .steps__item__icon {
+  color: #9356dc;
+}
+.steps__item__icon {
+  color: #7e7e7e;
+}
+.steps__item__icon1 {
+  font-size: 20px;
+  margin-right: 27px;
+}
+.steps__item__icon2 {
+  font-size: 16px;
+  margin-right: 23px;
+}
+.steps__item__icon3 {
+  font-size: 18px;
+  margin-right: 16px;
+}
+.steps__item__title {
+  margin: 0;
+}
+
+.steps__item1::before {
+  height: 24px;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #9356dc;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  position: absolute;
+  left: -12px;
+  content: "1";
+}
+
+.steps__item2::before {
+  height: 24px;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #9356dc;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  position: absolute;
+  left: -12px;
+  content: "2";
+}
+
+.steps__item3::before {
+  height: 24px;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #9356dc;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  position: absolute;
+  left: -12px;
+  content: "3";
 }
 
 .card-restaurant {
@@ -167,8 +251,11 @@ input:focus {
 }
 
 .concept__form {
+  background: #eaeaea;
   display: flex;
-  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 .concept__form__icon {
   height: 100%;
@@ -177,14 +264,24 @@ input:focus {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  font-size: 16;
   color: #353535;
   text-align: right;
   padding-right: 17px;
 }
 .concept__form__field {
-  flex: 64.53%;
-  text-align: left;
+  width: 50%;
+}
+.concept__form::before {
+  position: absolute;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 25%;
+  top: 0;
+  font-family: "Font Awesome 5 Free";
+  content: "\f3c5";
+  font-weight: 900;
 }
 .concept__container {
   background: #f6f6f6;
@@ -218,95 +315,10 @@ input:focus {
   flex-flow: column nowrap;
   gap: 25px;
 }
-.steps__item {
-  position: relative;
-  height: 72px;
-  width: 100%;
-  background: #f6f6f6;
-  border-radius: 20px;
-  box-shadow: -1px 2px 5px 2px rgba(0, 0, 0, 0.05);
-  padding: 0 35px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-.steps__item:hover {
-  background: #ece6f3;
-}
-.steps__item:hover .steps__item__icon {
-  color: #9356dc;
-}
-.steps__item__icon {
-  color: #7e7e7e;
-}
-.steps__item__icon1 {
-  font-size: 20px;
-  margin-right: 27px;
-}
-.steps__item__icon2 {
-  font-size: 16px;
-  margin-right: 23px;
-}
-.steps__item__icon3 {
-  font-size: 18px;
-  margin-right: 16px;
-}
-.steps__item__title {
-  margin: 0;
-}
-
-.steps__item1::before {
-  height: 24px;
-  width: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #9356dc;
-  border-radius: 50%;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 500;
-  position: absolute;
-  left: -12px;
-  content: "1";
-}
-
-.steps__item2::before {
-  height: 24px;
-  width: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #9356dc;
-  border-radius: 50%;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 500;
-  position: absolute;
-  left: -12px;
-  content: "2";
-}
-
-.steps__item3::before {
-  height: 24px;
-  width: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #9356dc;
-  border-radius: 50%;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 500;
-  position: absolute;
-  left: -12px;
-  content: "3";
-}
 
 .restaurants-list {
-  height: 1226px;
   width: 100%;
-  padding: 54px 20px 64px;
+  padding: 54px 20px 64.4px;
   background: #f6f6f6;
 }
 .restaurants-list__title {
@@ -316,6 +328,13 @@ input:focus {
   display: flex;
   flex-flow: column nowrap;
   gap: 18px;
+}
+@media (min-width: 768px) {
+  .restaurants-list__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
 }
 
 .restaurant {
