@@ -25,24 +25,6 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    // &::after {
-    //   position: absolute;
-    //   right: 25px;
-    //   top: 0;
-    //   height: 77px;
-    //   @include center;
-    //   z-index: 2;
-    //   font-family: "Font Awesome 5 Free";
-    //   font-size: 21px;
-    //   font-weight: 900;
-    //   content: "\f004";
-    //   overflow: hidden;
-    //   color: $heart-gradient;
-    //   //   background-clip: text;
-    //   &:hover {
-    //     color: red;
-    //   }
-    // }
   }
   &__about {
     width: 86.27%;
@@ -56,13 +38,23 @@
     font-size: 17px;
     font-weight: 300;
   }
-  &__like {
-    // width: 13.73%;
+  &__like-button {
+    position: relative;
     @include center;
     font-size: 21px;
-    &-icon {
-      &-hover {
-        color: red;
+    &:hover {
+      &::before {
+        position: absolute;
+        right: 0;
+        top: 12px;
+        font-family: "Font Awesome 5 Free";
+        font-size: 21px;
+        font-weight: 900;
+        content: "\f004";
+        background: $btn-gradient;
+        background-clip: text;
+        color: transparent;
+        animation: scale-up-center 150ms ease-in-out both;
       }
     }
   }

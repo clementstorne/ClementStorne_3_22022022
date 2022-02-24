@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;600;700;900&display=swap");
+@keyframes scale-up-center {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
 * {
   box-sizing: border-box;
   /* Opera/IE 8+ */
@@ -215,14 +223,25 @@ input:focus {
   font-size: 17px;
   font-weight: 300;
 }
-.card-restaurant__like {
+.card-restaurant__like-button {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 21px;
 }
-.card-restaurant__like-icon-hover {
-  color: red;
+.card-restaurant__like-button:hover::before {
+  position: absolute;
+  right: 0;
+  top: 12px;
+  font-family: "Font Awesome 5 Free";
+  font-size: 21px;
+  font-weight: 900;
+  content: "\f004";
+  background: linear-gradient(355deg, #9356dc 0%, #ff79da 100%);
+  background-clip: text;
+  color: transparent;
+  animation: scale-up-center 150ms ease-in-out both;
 }
 
 .card-course {
@@ -413,9 +432,30 @@ input:focus {
   padding: 31px 39px 0 20px;
   background: #f6f6f6;
   border-radius: 40px 40px 0 0;
+  font-size: 28px;
 }
 .restaurant__name__title {
   font-size: 28px;
+}
+.restaurant__like-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 21px;
+}
+.restaurant__like-button:hover::before {
+  position: absolute;
+  right: 0;
+  top: -10.6px;
+  font-family: "Font Awesome 5 Free";
+  font-size: 21px;
+  font-weight: 900;
+  content: "\f004";
+  background: linear-gradient(355deg, #9356dc 0%, #ff79da 100%);
+  background-clip: text;
+  color: transparent;
+  animation: scale-up-center 150ms ease-in-out both;
 }
 .restaurant__menu {
   padding-bottom: 51px;

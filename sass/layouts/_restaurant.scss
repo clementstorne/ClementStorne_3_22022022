@@ -3,10 +3,10 @@
   padding-bottom: 83px;
   &__image {
     height: 259px;
+    width: 100%;
     @include responsive-desktop {
       height: 400px;
     }
-    width: 100%;
     & img {
       height: 100%;
       width: 100%;
@@ -24,8 +24,29 @@
     padding: 31px 39px 0 20px;
     background: $light-gray;
     border-radius: 40px 40px 0 0;
+    font-size: 28px;
     &__title {
       font-size: 28px;
+    }
+  }
+  &__like-button {
+    position: relative;
+    @include center;
+    font-size: 21px;
+    &:hover {
+      &::before {
+        position: absolute;
+        right: 0;
+        top: -10.6px;
+        font-family: "Font Awesome 5 Free";
+        font-size: 21px;
+        font-weight: 900;
+        content: "\f004";
+        background: $btn-gradient;
+        background-clip: text;
+        color: transparent;
+        animation: scale-up-center 150ms ease-in-out both;
+      }
     }
   }
   &__menu {
