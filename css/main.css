@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;600;700;900&display=swap");
-@keyframes scale-up-center {
+@keyframes translate-up {
   0% {
-    transform: scale(1);
+    transform: translateY(0);
   }
   100% {
-    transform: scale(1.2);
+    transform: translateY(-100%);
   }
 }
 @keyframes animation-course-section {
@@ -395,7 +395,17 @@ input:focus {
   background: linear-gradient(355deg, #9356dc 0%, #ff79da 100%);
   background-clip: text;
   color: transparent;
-  animation: scale-up-center 150ms ease-in-out both;
+}
+.card-restaurant__like-button:hover::after {
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  right: 0;
+  top: 11px;
+  content: "";
+  background: #fff;
+  color: transparent;
+  animation: translate-up 600ms cubic-bezier(0.55, 0, 1, 0.74) both;
 }
 
 .label-new {
@@ -680,7 +690,17 @@ input:focus {
   background: linear-gradient(355deg, #9356dc 0%, #ff79da 100%);
   background-clip: text;
   color: transparent;
-  animation: scale-up-center 150ms ease-in-out both;
+}
+.restaurant__like-button:hover::after {
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  right: 0;
+  top: -9.6px;
+  content: "";
+  background: #fff;
+  color: transparent;
+  animation: translate-up 600ms cubic-bezier(0.55, 0, 1, 0.74) both;
 }
 .restaurant__menu {
   padding-bottom: 51px;

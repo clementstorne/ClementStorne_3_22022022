@@ -55,7 +55,18 @@
         background: $btn-gradient;
         background-clip: text;
         color: transparent;
-        animation: scale-up-center 150ms ease-in-out both;
+        // animation: scale-up-center 150ms ease-in-out both;
+      }
+      &::after {
+        width: 23px;
+        height: 23px;
+        position: absolute;
+        right: 0;
+        top: 11px;
+        content: "";
+        background: $white;
+        color: transparent;
+        animation: translate-up 600ms cubic-bezier(.55,0,1,.74) both;
       }
     }
   }
