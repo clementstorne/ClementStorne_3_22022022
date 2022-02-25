@@ -1,27 +1,76 @@
 .card-course {
   height: 68px;
   width: 100%;
+  position: relative;
   background: $white;
   border-radius: 15px;
-  padding: 10px 12px 12px;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: flex-end;
+  padding: 10px 0 12px 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   @include shadow(0.2);
   &__title {
     margin: 0 0 8.05px;
+    padding-right: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &__text {
+    width: 100%;
+    padding-right: 22px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
   }
   &__about {
-    margin: 0;
+    width: 100%;
+    margin: 0 5px 0 0;
     font-size: 15px;
     font-weight: 300;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   &__price {
     &-tag {
       font-size: 15px;
       font-weight: 700;
       margin: 0;
+    }
+  }
+  &__order {
+    display: none;
+    height: 100%;
+    width: 59px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-left: 5px;
+    background: $accent-light;
+    color: $white;
+    font-size: 20px;
+    font-weight: 900;
+  }
+  &:hover .card-course {
+    &__title {
+      width: calc(100% - 59px);
+      transition: 300ms;
+    }
+    &__text {
+      width: calc(100% - 59px);
+      transition: 300ms;
+    }
+    &__about {
+      transition: 300ms;
+    }
+    &__price {
+      transition: 300ms;
+    }
+    &__order {
+      @include center;
+      animation: animation-order-course 300ms both;
     }
   }
 }

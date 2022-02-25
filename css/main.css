@@ -118,6 +118,34 @@
   animation-delay: 2800ms;
 }
 
+@keyframes animation-order-course {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes animation-price {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-59px);
+  }
+}
+@keyframes rotate-tick {
+  0% {
+    transform: translateX(100%) rotate(-270deg);
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+}
+.rotate-tick {
+  animation: rotate-tick 300ms 50ms ease-out backwards;
+}
+
 * {
   box-sizing: border-box;
   /* Opera/IE 8+ */
@@ -389,27 +417,76 @@ input:focus {
 .card-course {
   height: 68px;
   width: 100%;
+  position: relative;
   background: #fff;
   border-radius: 15px;
-  padding: 10px 12px 12px;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: flex-end;
+  padding: 10px 0 12px 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
 }
 .card-course__title {
   margin: 0 0 8.05px;
+  padding-right: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card-course__text {
+  width: 100%;
+  padding-right: 22px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
 }
 .card-course__about {
-  margin: 0;
+  width: 100%;
+  margin: 0 5px 0 0;
   font-size: 15px;
   font-weight: 300;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .card-course__price-tag {
   font-size: 15px;
   font-weight: 700;
   margin: 0;
+}
+.card-course__order {
+  display: none;
+  height: 100%;
+  width: 59px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-left: 5px;
+  background: #99e2d0;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 900;
+}
+.card-course:hover .card-course__title {
+  width: calc(100% - 59px);
+  transition: 300ms;
+}
+.card-course:hover .card-course__text {
+  width: calc(100% - 59px);
+  transition: 300ms;
+}
+.card-course:hover .card-course__about {
+  transition: 300ms;
+}
+.card-course:hover .card-course__price {
+  transition: 300ms;
+}
+.card-course:hover .card-course__order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: animation-order-course 300ms both;
 }
 
 .header__logo {
@@ -613,8 +690,8 @@ input:focus {
 }
 @media (min-width: 992px) {
   .restaurant__menu {
-    flex-flow: row nowrap;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 .restaurant__courses {
@@ -662,10 +739,8 @@ input:focus {
 }
 @media (min-width: 992px) {
   .footer__menu__list {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 .footer__menu__item {

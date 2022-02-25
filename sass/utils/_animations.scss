@@ -51,3 +51,34 @@
     }
   }
 }
+
+@keyframes animation-order-course {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes animation-price {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-59px);
+  }
+}
+
+@keyframes rotate-tick {
+  0% {
+    transform: translateX(100%) rotate(-270deg);
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+}
+
+.rotate-tick {
+  animation: rotate-tick 300ms 50ms ease-out backwards;
+}

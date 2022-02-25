@@ -15,10 +15,8 @@
       padding-left: 0;
       margin: 17px 0;
       @include responsive-desktop {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
       }
     }
     &__item {
