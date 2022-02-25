@@ -15,10 +15,12 @@
       font-size: 20px;
       font-weight: 900;
     }
+    &-landpage {
+      height: 63px;
+      @include center;
+    }
   }
   &__form {
-    // display: flex;
-    // flex-flow: row nowrap;
     background: $medium-light-gray;
     @include center;
     position: relative;
@@ -32,8 +34,6 @@
       padding-right: 17px;
     }
     &__field {
-      // flex: 64.53%;
-      // text-align: left;
       width: 50%;
     }
     &::before {

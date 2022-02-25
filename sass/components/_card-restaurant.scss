@@ -8,6 +8,7 @@
   &__image {
     height: 174px;
     width: 100%;
+    position: relative;
     & img {
       width: 100%;
       height: 174px;
@@ -58,4 +59,18 @@
       }
     }
   }
+}
+
+.label-new {
+  width: 81px;
+  height: 29px;
+  @include center;
+  background: $accent-light;
+  position: absolute;
+  top: 13px;
+  right: 11px;
+  border-radius: 2px;
+  color: $accent-dark;
+  font-size: 14px;
+  font-weight: 500;
 }

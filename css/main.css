@@ -17,7 +17,7 @@
   }
 }
 .animation-course-section {
-  animation: animation-course-section 800ms cubic-bezier(0.42, 0.11, 0.3, 1) both;
+  animation: animation-course-section 400ms cubic-bezier(0.42, 0.11, 0.3, 1) both;
 }
 
 @keyframes animation-course {
@@ -34,20 +34,88 @@
   animation: animation-course 1000ms cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-.animation-course-1 {
+.animation-course-section-1 {
+  animation-delay: 0ms;
+}
+.animation-course-section-1 .animation-course-1 {
+  animation-delay: 200ms;
+}
+
+.animation-course-section-1 {
+  animation-delay: 0ms;
+}
+.animation-course-section-1 .animation-course-2 {
   animation-delay: 400ms;
 }
 
-.animation-course-2 {
+.animation-course-section-1 {
+  animation-delay: 0ms;
+}
+.animation-course-section-1 .animation-course-3 {
   animation-delay: 600ms;
 }
 
-.animation-course-3 {
+.animation-course-section-1 {
+  animation-delay: 0ms;
+}
+.animation-course-section-1 .animation-course-4 {
   animation-delay: 800ms;
 }
 
-.animation-course-4 {
+.animation-course-section-2 {
   animation-delay: 1000ms;
+}
+.animation-course-section-2 .animation-course-1 {
+  animation-delay: 1200ms;
+}
+
+.animation-course-section-2 {
+  animation-delay: 1000ms;
+}
+.animation-course-section-2 .animation-course-2 {
+  animation-delay: 1400ms;
+}
+
+.animation-course-section-2 {
+  animation-delay: 1000ms;
+}
+.animation-course-section-2 .animation-course-3 {
+  animation-delay: 1600ms;
+}
+
+.animation-course-section-2 {
+  animation-delay: 1000ms;
+}
+.animation-course-section-2 .animation-course-4 {
+  animation-delay: 1800ms;
+}
+
+.animation-course-section-3 {
+  animation-delay: 2000ms;
+}
+.animation-course-section-3 .animation-course-1 {
+  animation-delay: 2200ms;
+}
+
+.animation-course-section-3 {
+  animation-delay: 2000ms;
+}
+.animation-course-section-3 .animation-course-2 {
+  animation-delay: 2400ms;
+}
+
+.animation-course-section-3 {
+  animation-delay: 2000ms;
+}
+.animation-course-section-3 .animation-course-3 {
+  animation-delay: 2600ms;
+}
+
+.animation-course-section-3 {
+  animation-delay: 2000ms;
+}
+.animation-course-section-3 .animation-course-4 {
+  animation-delay: 2800ms;
 }
 
 * {
@@ -250,6 +318,7 @@ input:focus {
 .card-restaurant__image {
   height: 174px;
   width: 100%;
+  position: relative;
 }
 .card-restaurant__image img {
   width: 100%;
@@ -301,6 +370,22 @@ input:focus {
   animation: scale-up-center 150ms ease-in-out both;
 }
 
+.label-new {
+  width: 81px;
+  height: 29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #99e2d0;
+  position: absolute;
+  top: 13px;
+  right: 11px;
+  border-radius: 2px;
+  color: #008766;
+  font-size: 14px;
+  font-weight: 500;
+}
+
 .card-course {
   height: 68px;
   width: 100%;
@@ -347,6 +432,12 @@ input:focus {
   content: "\f060";
   font-size: 20px;
   font-weight: 900;
+}
+.header__logo-landpage {
+  height: 63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .header__form {
   background: #eaeaea;

@@ -21,8 +21,8 @@ $btn-gradient: linear-gradient(
 
 $btn-gradient-hover: linear-gradient(
   355deg,
-  lighten(rgba(147, 86, 220, 1),10) 0%,
-  lighten(rgba(255, 121, 218, 1),10) 100%
+  lighten(rgba(147, 86, 220, 1), 10) 0%,
+  lighten(rgba(255, 121, 218, 1), 10) 100%
 );
 
 $heart-gradient: linear-gradient(
@@ -31,5 +31,5 @@ $heart-gradient: linear-gradient(
   rgba(255, 121, 218, 1) 100%
 );
 
-$animation-course-section-duration: 800ms;
+$animation-course-section-duration: 400ms;
 $animation-course-duration: 1000ms;
