@@ -8,6 +8,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  cursor: pointer;
   @include shadow(0.2);
   &__title {
     margin: 0 0 8.05px;

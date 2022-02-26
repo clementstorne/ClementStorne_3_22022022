@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;600;700;900&display=swap");
+@keyframes hover {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
 @keyframes translate-up {
   0% {
     transform: translateY(0);
@@ -243,6 +251,7 @@ input:focus {
 }
 .loader__text-letters {
   animation: letter-up 1000ms ease-in-out both;
+  background: transparent;
 }
 .loader__text::after {
   content: "";
@@ -432,6 +441,10 @@ input:focus {
   border-radius: 14px;
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
 }
+.card-restaurant:hover {
+  transform: scale(1.03);
+  transition: transform 300ms ease-in-out;
+}
 .card-restaurant__image {
   height: 174px;
   width: 100%;
@@ -523,6 +536,7 @@ input:focus {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  cursor: pointer;
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
 }
 .card-course__title {
@@ -787,7 +801,7 @@ input:focus {
   right: 0;
   top: -9.6px;
   content: "";
-  background: #fff;
+  background: #f6f6f6;
   color: transparent;
   animation: translate-up 600ms cubic-bezier(0.55, 0, 1, 0.74) both;
 }
@@ -859,6 +873,9 @@ input:focus {
 .footer__menu__item a {
   display: block;
   color: #fff;
+}
+.footer__menu__item a:hover {
+  text-decoration: underline;
 }
 .footer__menu__item__icon_restaurant {
   margin-right: 11px;

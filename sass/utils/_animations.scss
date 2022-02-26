@@ -1,3 +1,12 @@
+@keyframes hover {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
 @keyframes translate-up {
   0% {
     transform: translateY(0);

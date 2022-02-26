@@ -1,5 +1,5 @@
 $loader-duration: 1000ms;
-$letter-delay: $loader-duration / 16;
+$letter-delay: $loader-duration * 0.0625;
 $underline-delay: $loader-duration + 650ms;
 $underline-duration: 300ms;
 $end-delay: $loader-duration * 1.5 + $underline-duration + 500ms;
@@ -45,6 +45,7 @@ $end-delay: $loader-duration * 1.5 + $underline-duration + 500ms;
     @include center;
     &-letters {
       animation: letter-up $loader-duration ease-in-out both;
+      background: transparent;
     }
     &::after {
       content: "";
