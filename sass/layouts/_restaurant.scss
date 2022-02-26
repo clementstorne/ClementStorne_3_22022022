@@ -44,6 +44,7 @@
         content: "\f004";
         background: $btn-gradient;
         background-clip: text;
+        -webkit-background-clip: text;
         color: transparent;
       }
       &::after {

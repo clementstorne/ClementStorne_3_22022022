@@ -58,8 +58,8 @@
         content: "\f004";
         background: $btn-gradient;
         background-clip: text;
+        -webkit-background-clip: text;
         color: transparent;
-        // animation: scale-up-center 150ms ease-in-out both;
       }
       &::after {
         width: 23px;

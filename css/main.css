@@ -496,6 +496,7 @@ input:focus {
   content: "\f004";
   background: linear-gradient(355deg, #9356dc 0%, #ff79da 100%);
   background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
 }
 .card-restaurant__like-button:hover::after {
@@ -792,6 +793,7 @@ input:focus {
   content: "\f004";
   background: linear-gradient(355deg, #9356dc 0%, #ff79da 100%);
   background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
 }
 .restaurant__like-button:hover::after {
