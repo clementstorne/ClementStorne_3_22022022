@@ -16,10 +16,8 @@
   }
   &__name {
     position: relative;
-    display: flex;
+    @include flex(space-between, center);
     flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
     margin-top: -40px;
     padding: 31px 39px 0 20px;
     background: $light-gray;
@@ -66,8 +64,6 @@
     flex-flow: column nowrap;
     align-items: center;
     @include responsive-desktop {
-      // flex-flow: row nowrap;
-      // align-items: flex-start;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
     }

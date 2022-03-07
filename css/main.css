@@ -464,8 +464,9 @@ input:focus {
   background: #fff;
   border-radius: 0 0 14px 14px;
   display: flex;
-  flex-flow: row nowrap;
   justify-content: space-between;
+  align-items: center;
+  flex-flow: row nowrap;
 }
 .card-restaurant__about {
   width: 86.27%;
@@ -551,9 +552,9 @@ input:focus {
   width: 100%;
   padding-right: 22px;
   display: flex;
-  flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+  flex-flow: row nowrap;
 }
 .card-course__about {
   width: 100%;
@@ -764,9 +765,9 @@ input:focus {
 .restaurant__name {
   position: relative;
   display: flex;
-  flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+  flex-flow: row nowrap;
   margin-top: -40px;
   padding: 31px 39px 0 20px;
   background: #f6f6f6;
@@ -892,9 +893,9 @@ input:focus {
   .desktop-only {
     height: 437px;
     display: flex;
-    flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+    flex-flow: row nowrap;
     gap: 40px;
   }
 }

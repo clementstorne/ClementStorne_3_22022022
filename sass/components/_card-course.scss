@@ -20,10 +20,8 @@
   &__text {
     width: 100%;
     padding-right: 22px;
-    display: flex;
+    @include flex(space-between, center);
     flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
   }
   &__about {
     width: 100%;

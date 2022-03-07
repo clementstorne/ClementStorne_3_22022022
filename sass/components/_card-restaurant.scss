@@ -27,9 +27,8 @@
     padding: 16px 25px 16px 13px;
     background: $white;
     border-radius: 0 0 14px 14px;
-    display: flex;
+    @include flex(space-between, center);
     flex-flow: row nowrap;
-    justify-content: space-between;
   }
   &__about {
     width: 86.27%;
