@@ -24,7 +24,7 @@
     opacity: 0;
     z-index: -1;
     @include shadow(0.4);
-    transition: all 250ms ease-in-out;
+    transition: all 400ms ease-in-out;
   }
   &:hover {
     &::after {

@@ -62,14 +62,14 @@
       transition: 300ms;
     }
     &__about {
-      transition: 300ms;
+      transition: $animation-tick-duration;
     }
     &__price {
-      transition: 300ms;
+      transition: $animation-tick-duration;
     }
     &__order {
       @include center;
-      animation: animation-order-course 300ms both;
+      animation: animation-order-course $animation-tick-duration both;
     }
   }
 }
